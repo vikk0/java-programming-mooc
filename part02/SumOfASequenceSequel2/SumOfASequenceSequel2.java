@@ -13,8 +13,10 @@ class SumOfASequenceSequel2 {
         int numLast = Integer.valueOf(scanner.nextLine());
 
         int sum = 0;
-        for (int i = numFirst; i <= numLast; i++) {
-            sum += i;
+
+        while (numFirst <= numLast) {
+            sum += numFirst;
+            numFirst++;
         }
 
         System.out.println(sum);
