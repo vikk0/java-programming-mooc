@@ -1,8 +1,8 @@
-package SumOfASequenceSequel;
+package SumOfASequenceSequel2;
 
 import java.util.Scanner;
 
-class SumOfASequenceSequel {
+class SumOfASequenceSequel2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
