@@ -14,6 +14,10 @@ public class Factorial {
             --n;
         }
 
+        if (n == 0) {
+            factorial = 1;
+        }
+
         System.out.println("Factorial: " + factorial);
     }
 }
