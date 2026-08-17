@@ -1,0 +1,40 @@
+package AdvancedAstrology;
+
+public class AdvancedAstrology {
+    public static void main(String[] args) {
+        christmasTree(10);
+    }
+
+    public static void printStars(int number) {
+        for (int i = 0; i < number; ++i) {
+            System.out.print("*");
+        }
+
+        System.out.println("");
+    }
+
+    public static void printSpaces(int number) {
+        for (int i = 0; i < number; i++)
+            System.out.print(" ");
+    }
+
+    public static void printTriangle(int size) {
+        for (int i = 1, j = size - 1; i <= size; i++) {
+            printSpaces(j);
+            printStars(i);
+            --j;
+        }
+    }
+
+    public static void christmasTree(int height) {
+        for (int i = 1; i <= height; i++) {
+            printSpaces(height - i);
+            printStars(i + i - 1);
+        }
+
+        printSpaces(height - 2);
+        printStars(3);
+        printSpaces(height - 2);
+        printStars(3);
+    }
+}

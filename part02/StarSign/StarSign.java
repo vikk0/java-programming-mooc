@@ -9,6 +9,7 @@ public class StarSign {
         System.out.println("");
     }
 
+
     public static void printSquare(int number) {
         for (int i = 0; i < number; ++i) {
             printStars(number);
